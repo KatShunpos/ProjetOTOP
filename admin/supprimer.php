@@ -21,6 +21,7 @@ $Produits = afficher();
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/259f41835c.js" crossorigin="anonymous"></script> 
     <title>Document</title>
 </head>
 
@@ -57,6 +58,41 @@ $Produits = afficher();
             </div>
         </div>
     </section>
+                                            ///////////////////CODE WILLIAM////////////////
+    <section>
+    <article id="champinscription">
+    <div class="container" >
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <img  id="logo" style="width: 40%; margin-bottom: 5%; margin-top: 2%;" src="/HTML/OTOP-noir.png"><br>
+            </div>
+            <div>
+                <h1 style="margin-bottom: 5%; margin-left: 27%; color: grey;" id="titre">Voulez vous supprimer un produit?</h1>
+            </div>
+        </div>
+        <div style="width: 60%; margin-bottom: 3%; margin-left: 20%;" id="champinscription" class="d-flex justify-content-center">
+                <label class="visually-hidden" for="autoSizingInputGroup">Id Produit</label><br>
+                <div class="input-group">
+                    <div class="input-group-text" style="background-color: rosybrown;" id="fondicone"><i style="color: #FFF5F7;" class="fa-solid fa-key"></i></div>
+                    <input type="number" class="form-control" id="autoSizingInputGroup" name="idproduit"placeholder="Id Produit" required>
+                </div>
+        </div>
+        <div style="width: 60%; margin-bottom: 3%; margin-left: 20%;" id="champinscription" id="bouton" class=""> 
+            <div class="d-flex justify-content-center">
+                <br><a href=""><button type="button" id="boutonformulaire" name="valider" class="btn btn btn-secondary btn-lg"><h4 style="color: rosybrown;">Supprimer</h4></button></a>
+            </div><br>
+            <div id="boutonsupp">
+                <div class="d-flex justify-content-center">
+                    <a href="#"><button type="button" id="boutonformulaire" class="btn btn btn-secondary btn-lg"><h4 style="color: rosybrown;">Retour</h4></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </article>
+</section>
+                                             ///////////////////CODE WILLIAM////////////////
 </body>
 
 </html>
