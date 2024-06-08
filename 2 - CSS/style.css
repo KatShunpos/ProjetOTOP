@@ -1,9 +1,11 @@
+/* CSS du body */
 body {
   margin: 0%;
   padding: 0%;
   height: auto;
 }
 
+/* CSS de la galerie de produits */
 #galerie {
   display: flex;
   flex-direction: row;
@@ -14,20 +16,27 @@ body {
   margin-bottom: 0%;
 }
 
+/* CSS de la class card-img-top */
 .card-img-top {
   width: 100%; /* Ajuste la largeur de l'image selon vos besoins */
   height: 400px; /* Ajuste la hauteur de l'image selon vos besoins */
   object-fit: cover; /* Permet de redimensionner l'image pour que sa largeur et sa hauteur soient les mêmes */
 }
+
+/* CSS des groupes top et bottom */
 .top-group,
 .bottom-group {
   display: flex; /* Affiche les cartes en une seule ligne */
   flex-wrap: nowrap; /* Permet d'aligner les cartes sur plusieurs lignes si neccessaire */
   gap: 1rem; /* Optionnel : ajoutes de l'espace entre les cartes */
 }
+
+/* CSS du bottom group, permettant d'espacer les deux groupes */
 .bottom-group {
   margin-top: 2rem; /* Ajuste la valeur selon vos besoins */
 }
+
+/* CSS des boutons bootstrap */
 .btn {
   color: rosybrown !important; /* Change la couleur du texte des boutons */
   background-color: #fff5f7 !important; /* Change la couleur de fond des boutons */

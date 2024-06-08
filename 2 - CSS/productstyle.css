@@ -1,8 +1,10 @@
+/* CSS du body */
 body {
   margin: 0%;
   padding: 0%;
 }
 
+/* CSS du formulaire */
 form {
   display: flex;
   flex-direction: row;
@@ -10,20 +12,28 @@ form {
   align-items: center;
   margin-bottom: 3%;
 }
+
+/* CSS pour cacher les label des input */
 form > div > label {
   display: none;
 }
+
+/* CSS de la mise en forme des input */
 form > div > input {
   width: 100px;
   height: 30px;
   margin: 10px;
 }
 
+/* CSS de l'id current */
+
 #current {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+/* CSS des a href de l'id current */
 #current > span > a {
   text-decoration: none;
   color: black;
