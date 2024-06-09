@@ -5,11 +5,13 @@
     width: 100%; 
     background-color: #FFF5F7;
 }
-#navbarotop li {
-    display: inline;
-    margin-left: 15%;
-    
-    
+#logonavbar {
+    width: 10%;
+    margin-left: 2%;
+}
+#navbarotop #navitem {
+    display: flex;
+    margin-inline: 8%;
 }
 #navbarnav {
     display: flex;
@@ -28,7 +30,7 @@
     margin-left: -40%;
 }
 #moncompte {
-    color: rosybrown;
+    color: #bc8f8f;
 }
 #moncompte button {
     color: rosybrown;
@@ -47,6 +49,9 @@
 }
 #searchbar {
     margin-top: 4%;
+}
+#recherche {
+    margin-left: 13%;
 }
 
 /* CSS megamenu */
@@ -186,13 +191,13 @@
 #carouselitem .img1 {
     display: flex;
     width: 50%;
-    margin-top: 5%;
+    margin-top: 2.5%;
     
 }
 #carouselitem2 .img2 {
     display: flex;
     width: 50%;
-    margin-top: 5%;
+    margin-top: 2.5%;
     
 }
 #carousel-caption {
@@ -350,16 +355,21 @@
 #reseaux {
     display: flex; 
     justify-content: space-evenly; 
-    color: rosybrown; 
     margin-top: 4%;
     margin-bottom: 5%;
+    
 }
 #reseaux h5 {
     font-size: 200%;
+    color: rosybrown!important;
 }
 #reseaux i {
     color: grey;
     margin-bottom: 60%;
+}
+#reseaux h5 a {
+    text-decoration: none!important;
+    color: rosybrown;
 }
 
 /* CSS footer */
