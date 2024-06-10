@@ -34,6 +34,7 @@ body {
 /* CSS du bottom group, permettant d'espacer les deux groupes */
 .bottom-group {
   margin-top: 2rem; /* Ajuste la valeur selon vos besoins */
+  margin-bottom: 15%;
 }
 
 /* CSS des boutons bootstrap */
