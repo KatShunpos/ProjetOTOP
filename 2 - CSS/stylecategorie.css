@@ -48,4 +48,5 @@ form > div > input {
 }
 .top-group {
   margin-bottom: 25%;
+  display: flex;
 }
