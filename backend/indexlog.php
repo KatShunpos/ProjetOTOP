@@ -27,9 +27,6 @@ if(isset($_SESSION['email']))
 
 // Appeler la fonction afficher() pour récupérer les produits et les stocker dans la variable $Produits
 $Produits=afficher();
-
-
-
 ?>
         
  
