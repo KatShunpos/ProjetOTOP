@@ -1,8 +1,9 @@
 <?php 
+// Démarre une nouvelle session ou reprend une session existante
 session_start();
     
  
-
+    // Inclut le fichier contenant les commandes (fonctions) pour interagir avec la base de données
     require("../config/commandes.php")
 ?>
 
