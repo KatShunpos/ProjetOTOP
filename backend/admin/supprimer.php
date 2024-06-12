@@ -1,10 +1,12 @@
 <?php
+// Démarre une nouvelle session ou reprend une session existante
 session_start();
+
 //securisation des acces a la page admin
-
-
-
+// Inclusion du fichier de configuration et des commandes
 require("../config/commandes.php");
+// Appel de la fonction 'afficher' pour récupérer et afficher les produits
+// Elle récupère les produits de la base de données et les retourne
 $Produits = afficher();
 ?>
 
@@ -35,6 +37,7 @@ $Produits = afficher();
 
                         <button type="submit" name="valider" class="btn btn-primary">supprimer un produit</button>
                 </form>
+                // Boucle à travers chaque produit dans le tableau $Produits et affiche les informations de chaque produit
                 <?php foreach ($Produits as $produit) : ?>
                     
                         <div class="container">
@@ -49,6 +52,7 @@ $Produits = afficher();
                             </div>
                          </div>
                 <?php endforeach; ?>
+                // Fin de boucle pour afficher les produits
             </div>
         </div>
     </section>
@@ -58,12 +62,13 @@ $Produits = afficher();
 <?php
 // verification du remplisage du formulaire et mise en base de donne avec la method post
 if (isset($_POST['valider'])) {
-    //verification du remplisage
+    // Vérification que le champ 'idproduit' est présent dans le formulaire
     if (isset($_POST['idproduit'])) {
-        //recuperation des donné du formulaire
+        // Vérification que le champ 'idproduit' n'est pas vide
         if (!empty($_POST['idproduit'])) {
+            // Récupération et sécurisation des données du formulaire
             $idproduit = htmlspecialchars(strip_tags($_POST['idproduit']));
-            //apelle de la fonction supprimer
+            // Appel de la fonction 'supprimer' pour supprimer le produit de la base de données
             supprimer($idproduit);
         }
     }
