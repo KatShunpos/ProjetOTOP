@@ -40,41 +40,53 @@ require "config/connexion.php";
 
 
 <?php
+ // Démarre une nouvelle session ou reprend une session existante
 session_start();
 //si le bouton se connecter est cliqué alors on execute le code ci-dessous
 if(isset($_POST['valider'] )){
-  //on verifie si les champs ne sont pas vide
+    // Vérifie si les champs "email" et "motdepasse" ne sont pas vides
     if(!empty($_POST['email']) AND!empty($_POST['motdepasse'])){
+    // Récupère et sécurise les valeurs des champs "email" et "motdepasse"
         $email =htmlspecialchars($_POST['email']);
         $mdp =sha1($_POST['motdepasse']);
-      //creation de la variable recupuser qui sera egale a access(variable de connection a la bdd)qui prepare la comande sql dans prepare
+        // Hache le mot de passe avec SHA-1 (à remplacer par password_hash pour plus de sécurité)
+      
+        // Prépare une requête SQL pour vérifier si l'utilisateur existe avec les informations fournies
         $recupUser = $access->prepare("SELECT * FROM utilisateur WHERE email =? AND motdepasse =? LIMIT 1");
-        //on execute la requete prepare avec les parametres email et motdepasse
+        //on execute la requete preparée avec les parametres email et motdepasse
         $recupUser->execute(array($email, $mdp));
-
+        
+        // Prépare une requête SQL pour récupérer le nom de l'utilisateur basé sur l'email
         $recupnom = $access->prepare("SELECT nom FROM utilisateur WHERE email = :email");
+        // Exécute la requête avec le paramètre "email"
         $recupnom->execute(array(':email' => $email));
 
      
-
+        // Compte le nombre de lignes retournées par la requête (doit être 1 si l'utilisateur existe)
         $checkuser = $recupUser->rowCount();
+        // Récupère les informations de l'utilisateur (type d'utilisateur, etc.)
         $isAdmin = $recupUser->fetch();
         
-        //heck user va crée la session si il et superieur a 0
+        // Si l'utilisateur existe, crée une session avec les informations de l'utilisateur
         if($checkuser > 0){
           $_SESSION['email'] = $email;
           $_SESSION['motdepasse'] = $mdp;
           $_SESSION['type'] = $isAdmin['type'];
-
+                  // Redirige l'utilisateur vers la page "indexlog.php"
                  header("location:indexlog.php");
-           //sinon il va crée une session clasic pour tout les autre cas           
-          } if ($recupUser->rowCount() > 0) {
-            $user = $recupUser->fetch();
-            $nom = $recupnom->fetchColumn();
+          } 
+        // Vérifie à nouveau si l'utilisateur existe (cette condition est redondante et inutile)
+        if ($recupUser->rowCount() > 0) {
+            $user = $recupUser->fetch(); 
+          // Récupère les informations de l'utilisateur
+            $nom = $recupnom->fetchColumn(); 
+          // Récupère le nom de l'utilisateur
             $_SESSION['nom'] = $nom;
           $_SESSION['email'] = $email;
           $_SESSION['motdepasse'] = $mdp;
           $_SESSION['userid'] = $user['userid'];
+          // Redirige l'utilisateur vers la page "indexlog.php"
+
           header('location:indexlog.php');
           }
               // Redirection vers la page utilisateur
