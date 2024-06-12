@@ -28,3 +28,15 @@ header h1 {
   background-color: grey;
   border-color: rosybrown;
 }
+#footer {
+  margin-top: 5% !important;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.table th {
+  width: 20%;
+}

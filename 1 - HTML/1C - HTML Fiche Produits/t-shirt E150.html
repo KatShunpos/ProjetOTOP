@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/2 - CSS/styleproduit.css" />
     <link rel="stylesheet" href="/2 - CSS/styleaccueil.css" />
 
+    <script src="/3 - JS/script.js" defer></script>
+
     <title>Produit - T-Shirt Homme #E150</title>
   </head>
   <body>
@@ -32,25 +34,36 @@
         </ol>
       </nav>
       <div class="row">
-        <div class="col-md-6">
-          <img
-            src="/4 - Images/PS_CGTU01T_WHITE.webp"
-            alt="T-Shirt Homme"
-            class="img-fluid"
-          />
-          <div class="d-flex justify-content-center mt-2">
-            <img
-              src="/4 - Images/PS_CGTU01T-S_WHITE.webp"
-              alt="Thumbnail 1"
-              class="img-thumbnail mx-1"
-            />
-            <img
-              src="/4 - Images/PS_CGTU01T-B_WHITE.webp"
-              alt="Thumbnail 2"
-              class="img-thumbnail mx-1"
-            />
-          </div>
-        </div>
+        <div class="container">
+          <!-- Autres sections de la page -->
+          <div class="row">
+              <div class="col-md-6">
+                  <img
+                      id="mainImage"
+                      src="/4 - Images/PS_CGTU01T_WHITE.webp"
+                      alt="T-Shirt Homme"
+                      class="img-fluid"
+                  />
+                  <div class="d-flex justify-content-center mt-2">
+                      <img 
+                          src="/4 - Images/PS_CGTU01T_WHITE.webp" 
+                          alt="Thumbnail 1" 
+                          class="img-thumbnail mx-1"
+                          onclick="changeImage(this)">
+                      <img
+                          src="/4 - Images/PS_CGTU01T-S_WHITE.webp"
+                          alt="Thumbnail 1"
+                          class="img-thumbnail mx-1"
+                          onclick="changeImage(this)"
+                      />
+                      <img
+                          src="/4 - Images/PS_CGTU01T-B_WHITE.webp"
+                          alt="Thumbnail 2"
+                          class="img-thumbnail mx-1"
+                          onclick="changeImage(this)"
+                      />
+                  </div>
+              </div>
         <div class="col-md-6">
           <h2>T-Shirt Homme #E150 – TT-CGTU01T</h2>
           <p>6,50 € HT</p>
@@ -67,10 +80,15 @@
             <div class="form-group">
               <label for="size">Taille:</label>
               <select class="form-control" id="size">
+                <option>XS</option>
                 <option>S</option>
                 <option>M</option>
                 <option>L</option>
                 <option>XL</option>
+                <option>XXL</option>
+                <option>3XL</option>
+                <option>4XL</option>
+                <option>5XL</option>
               </select>
             </div>
             <button type="submit" class="btn btn-primary">
@@ -137,7 +155,17 @@
             role="tabpanel"
             aria-labelledby="description-tab"
           >
-            <p>100% coton peigné...</p>
+            <p>
+              100% coton pré-rétréci à fil de chaîne continu ring-spun ( sauf
+              coloris Ash : 99% coton pré-rétréci à fil de chaîne continu / 1%
+              viscose et Sport Grey : 85% coton pré-rétréci à fil de chaîne
+              continu / 15% viscose). Bande de propreté au col. Fines finitions
+              en bord-côte pour un look moderne. Construction tubulaire. Coupe
+              classique contemporaine. Étiquette satinée. #tshirtbasique
+              #tendance #ringspun Lavage en machine à 40°C max. Pas de
+              blanchiment. Sèche-linge autorisé. Repassage à moyenne température
+              (max 150°C). Pas de nettoyage à sec.
+            </p>
           </div>
           <div
             class="tab-pane fade"
@@ -145,7 +173,37 @@
             role="tabpanel"
             aria-labelledby="additional-info-tab"
           >
-            <!-- Informations complémentaires -->
+            <div class="container mt-5">
+              <table class="table table-bordered">
+                <tbody>
+                  <tr>
+                    <th scope="row">Poids</th>
+                    <td>0,180 kg</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Couleur #E150 T-Shirt Homme</th>
+                    <td>
+                      Apricot, Ash, Atoll, Azure, Bear Brown, Black, Black Pure,
+                      Bottle Green, Burgundy, Cobalt Blue, Dark Grey, Deep Red,
+                      Denim, Diva Blue, Electric Blue, Fire Red, Fuchsia, Gold,
+                      Kelly Green, Light Navy, Millennial Khaki, Millennial
+                      Pink, Natural, Navy, Navy Blue, Orange, Orchid Green,
+                      Pistachio, Radiant Purple, Real Turquoise, Red, Royal
+                      Blue, Sand, Sky Blue, Solar Yellow, Sport Grey, Turquoise,
+                      Urban Khaki, Urban Purple, Used Black, White
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Taille #E150 Homme</th>
+                    <td>XS, S, M, L, XL, XXL, 3XL, 4XL, 5XL</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Grammages</th>
+                    <td>145 g/m²</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <div
             class="tab-pane fade"
