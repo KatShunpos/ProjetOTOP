@@ -247,6 +247,7 @@
     </div>
   </div>
 <?php endforeach;?>
+// Fin de la boucle
 </main>
 
 <footer class="text-body-secondary py-5">
