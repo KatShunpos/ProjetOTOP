@@ -1,25 +1,31 @@
 <?php
-
+// Démarrer une nouvelle session ou reprendre la session existante
 session_start();
 
-
+// Inclure les fichiers nécessaires pour les commandes et la connexion à la base de données
 require("config/commandes.php");
 require("config/connexion.php");
-//redirection des utilisateur selon si il sont admin ou pas 0 = user 1= admin
+
+// Vérifier si l'utilisateur est connecté en vérifiant la variable de session 'email'
 if(isset($_SESSION['email']))
+    // Vérifier le type d'utilisateur (0 = utilisateur standard, 1 = administrateur)
 {
   if($_SESSION['type'] == '0'){
+        // Si l'utilisateur est un utilisateur standard, afficher un message de connexion réussie
     echo "bien connecté";
   }else{
+        // Si le type n'est pas 0, afficher un message d'erreur de connexion
+
     echo "ereur de connection ";
   }
+    // Si l'utilisateur est un administrateur, rediriger vers la page d'administration
   if($_SESSION['type'] == '1'){
     header("location:admin/index.php");
   
 }
 }
 
-//variable produit qui apelle la fonction afficher
+// Appeler la fonction afficher() pour récupérer les produits et les stocker dans la variable $Produits
 $Produits=afficher();
 
 
@@ -241,7 +247,7 @@ $Produits=afficher();
       </div>
     </div>
   </section>
-  <!-- creation de la boucle php qui execute le code html en dessou pour crée le front des produit mis en bdd -->
+  <!-- creation de la boucle php qui execute le code html en dessous pour crée le front des produit mis en bdd -->
 <?php foreach($Produits as $produit): ?>
   <div class="album py-5 bg-body-tertiary">
     <div class="container">
