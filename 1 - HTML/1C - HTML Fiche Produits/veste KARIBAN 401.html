@@ -5,258 +5,209 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/2 - CSS/styleproduit.css" />
     <link rel="stylesheet" href="/2 - CSS/styleaccueil.css" />
 
-    <script src="/3 - JS/product.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/259f41835c.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Veste</title>
+    <title>Produit - Veste Kariban 401</title>
   </head>
   <body>
-    <section id="navbar ">
-      <div class="container">
-        <nav
-          id="navbarotop"
-          class="navbar fixed-top navbar-expand-lg navbar-expand-md navbar-expand-sm"
-        >
-          <img id="logonavbar" src="/4 - Images/OTOP-noir.png" />
-          <div class="navbar-nav">
-            <ul class="navbar-nav" id="navbarnav">
-              <li class="nav-item" id="navitem">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/1 - HTML/accueil.html"
-                  id="accueilbouton"
-                  ><h5>Accueil</h5></a
-                >
-              </li>
-              <li class="nav-item dropdown;" id="navitem">
-                <a
-                  class="nav-link dropdown"
-                  id="nav-linkdropdown"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  ><h5>Textiles</h5></a
-                >
-                <ul class="dropdown-menu" id="dropdownmenu">
-                  <h2>NOTRE OFFRE TEXTILE</h2>
-                  <li>
-                    <div class="col-lg-2">
-                      <div class="card shadow-sm" id="cardshadow1">
-                        <img
-                          src="/4 - Images/image3.jpeg"
-                          class="card-img-top"
-                          alt="..."
-                        />
-                        <div class="card-body text-bg">
-                          <a href="#"
-                            ><h5 cla ss="card-title">
-                              <i class="fa-solid fa-shirt"></i> Nouveautés
-                            </h5></a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-2">
-                      <div class="card shadow-sm" id="cardshadow2">
-                        <img
-                          src="/4 - Images/image4.jpeg"
-                          class="card-img-top"
-                          alt="..."
-                        />
-                        <div class="card-body text-bg">
-                          <a href="#"
-                            ><h5 class="card-title">
-                              <i class="fa-solid fa-shirt"></i> Déstockage
-                            </h5></a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-2">
-                      <div class="card shadow-sm" id="cardshadow3">
-                        <img
-                          src="/4 - Images/image5.jpeg"
-                          class="card-img-top"
-                          alt="..."
-                        />
-                        <div class="card-body text-bg">
-                          <a href="#"
-                            ><h5 class="card-title">
-                              <i class="fa-solid fa-shirt"></i> Promotions
-                            </h5></a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-2">
-                      <div class="card shadow-sm" id="cardshadow4">
-                        <img
-                          src="/4 - Images/image10.png"
-                          class="card-img-top"
-                          alt="..."
-                        />
-                        <div class="card-body">
-                          <ul>
-                            <a href="#"
-                              ><li><p>T-Shirts Enfants</p></li></a
-                            >
-                            <a href="#"
-                              ><li><p>Polos Enfants</p></li></a
-                            >
-                            <a href="#"
-                              ><li><p>Sweat-Shirts Enfants</p></li></a
-                            >
-                            <a href="#"
-                              ><li><p>Vestes Enfants</p></li></a
-                            >
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-2">
-                      <div class="card shadow-sm" id="cardshadow5">
-                        <img
-                          src="/4 - Images/image11.png"
-                          class="card-img-top"
-                          alt="..."
-                        />
-                        <div class="card-body">
-                          <ul>
-                            <a href="#"
-                              ><li><p>T-Shirts Femmes</p></li></a
-                            >
-                            <a href="#"
-                              ><li><p>Polos Femmes</p></li></a
-                            >
-                            <a href="#"
-                              ><li><p>Sweat-Shirts Femmes</p></li></a
-                            >
-                            <a href="#"
-                              ><li><p>Vestes Femmes</p></li></a
-                            >
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-2">
-                      <div class="card shadow-sm" id="cardshadow6">
-                        <img
-                          src="/4 - Images/image12.png"
-                          class="card-img-top"
-                          alt="..."
-                        />
-                        <div class="card-body">
-                          <ul>
-                            <a href="#"
-                              ><li><p>T-Shirts Hommes</p></li></a
-                            >
-                            <a href="#"
-                              ><li><p>Polos Hommes</p></li></a
-                            >
-                            <a href="#"
-                              ><li><p>Sweat-Shirts Hommes</p></li></a
-                            >
-                            <a href="#"
-                              ><li><p>Vestes Hommes</p></li></a
-                            >
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li id="descriptif">
-                    <div class="card-body col-lg-6">
-                      <h6>
-                        <p>
-                          Vous êtes un club de sport, une association, découvrez
-                          notre gamme, composés<br />
-                          de gammes complètes avec des offres groupés pour des
-                          opérations réussies !
-                        </p>
-                      </h6>
-                    </div>
-                    <div class="col-lg-6" id="cardshadow7">
-                      <div class="card shadow-sm">
-                        <a href="#" id="survolcard7" alt="..."
-                          ><img
-                            src="/4 - Images/image15.jpg"
-                            class="card-img-top"
-                            alt="..."
-                        /></a>
-                        <div class="card-body">
-                          <h4>Offre clubs de sport</h4>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item" id="navitem">
-                <div class="dropdown">
-                  <a
-                    class="nav-link btn btn dropdown"
-                    id="moncompte"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <h3><i class="fa-solid fa-user"></i></h3>
-                  </a>
-                  <ul id="menumoncompte" class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Se Connecter</a></li>
-                    <li><a class="dropdown-item" href="#">Inscription</a></li>
-                  </ul>
-                </div>
-              </li>
-
-              <li class="nav-item" id="navitem">
-                <a href="#" id="monpanier" class="nav-link">
-                  <h3>
-                    <i class="fa-solid fa-bag-shopping"></i>
-                  </h3>
-                </a>
-              </li>
-              <li
-                id="recherche"
-                class="nav-item nav-item-expand-lg nav-item-expand-md nav-item-expand-sm"
-              >
-                <div class="input-group mb-3" id="searchbar">
-                  <span class="input-group-text" id="basic-addon1"
-                    ><a href="#"></a>
-                    <h4>
-                      <i id="loupe" class="fa-solid fa-magnifying-glass"></i>
-                    </h4>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Rechercher..."
-                      aria-label="Username"
-                      aria-describedby="basic-addon1"
-                    />
-                  </span>
-                </div>
-              </li>
-            </ul>
+    <div class="container">
+      <header class="text-center my-4">
+        <h1>OTOP</h1>
+      </header>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="/1 - HTML/accueil.html">Accueil</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="/1 - HTML/boutique.html">Boutique</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            T-Shirt Homme #E150
+          </li>
+        </ol>
+      </nav>
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="/4 - Images/PS_CGTU01T_WHITE.webp"
+            alt="T-Shirt Homme"
+            class="img-fluid"
+          />
+          <div class="d-flex justify-content-center mt-2">
+            <img
+              src="/4 - Images/PS_CGTU01T-S_WHITE.webp"
+              alt="Thumbnail 1"
+              class="img-thumbnail mx-1"
+            />
+            <img
+              src="/4 - Images/PS_CGTU01T-B_WHITE.webp"
+              alt="Thumbnail 2"
+              class="img-thumbnail mx-1"
+            />
           </div>
-        </nav>
+        </div>
+        <div class="col-md-6">
+          <h2>T-Shirt Homme #E150 – TT-CGTU01T</h2>
+          <p>6,50 € HT</p>
+          <p class="text-success">En stock</p>
+          <form>
+            <div class="form-group">
+              <label for="color">Couleur:</label>
+              <select class="form-control" id="color">
+                <option>Blanc</option>
+                <option>Noir</option>
+                <!-- Ajouter d'autres options de couleurs -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="size">Taille:</label>
+              <select class="form-control" id="size">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Ajouter au panier
+            </button>
+          </form>
+        </div>
       </div>
-    </section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+      <div class="mt-4">
+        <ul class="nav nav-tabs" id="productTab" role="tablist">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              id="description-tab"
+              data-toggle="tab"
+              href="#description"
+              role="tab"
+              aria-controls="description"
+              aria-selected="true"
+              >Description</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="additional-info-tab"
+              data-toggle="tab"
+              href="#additional-info"
+              role="tab"
+              aria-controls="additional-info"
+              aria-selected="false"
+              >Informations complémentaires</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="tech-sheet-tab"
+              data-toggle="tab"
+              href="#tech-sheet"
+              role="tab"
+              aria-controls="tech-sheet"
+              aria-selected="false"
+              >Fiche technique</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="reviews-tab"
+              data-toggle="tab"
+              href="#reviews"
+              role="tab"
+              aria-controls="reviews"
+              aria-selected="false"
+              >Avis</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content" id="productTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="description"
+            role="tabpanel"
+            aria-labelledby="description-tab"
+          >
+            <p>100% coton peigné...</p>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="additional-info"
+            role="tabpanel"
+            aria-labelledby="additional-info-tab"
+          >
+            <!-- Informations complémentaires -->
+          </div>
+          <div
+            class="tab-pane fade"
+            id="tech-sheet"
+            role="tabpanel"
+            aria-labelledby="tech-sheet-tab"
+          >
+            <!-- Fiche technique -->
+          </div>
+          <div
+            class="tab-pane fade"
+            id="reviews"
+            role="tabpanel"
+            aria-labelledby="reviews-tab"
+          >
+            <!-- Avis -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
+
+  <footer id="footer">
+    <div class="container text-center">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <div class="col" id="footer2">
+          <a href="#"><img src="/4 - Images/OTOP-noir.png" id="logootop" /></a
+          ><br /><br />
+          <ul>
+            <li id="liste">contact@etre-otop.fr</li>
+            <li id="liste">04 65 011 099</li>
+            <li id="liste">
+              Bât 9, Village des<br />
+              solutions AFPA 60<br />
+              Avenue Felix Gouin<br />
+              13800 ISTRES
+            </li>
+          </ul>
+        </div>
+        <div class="col" id="footer2">
+          <h5>Navigation</h5>
+          <ul>
+            <a href="#"><li>Accueil</li></a>
+            <a href="#"><li>Boutique</li></a>
+            <a href="#"><li>Demande de devis</li></a>
+            <a href="#"><li>Nous contacter</li></a>
+          </ul>
+        </div>
+        <div class="col" id="footer2">
+          <h5>Liens utiles</h5>
+          <ul>
+            <a href="#"><li>Mon compte</li></a>
+            <a href="#"><li>Produits personnalisés</li></a>
+            <a href="#"><li>Mention légales</li></a>
+            <a href="#"><li>CGV</li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>
