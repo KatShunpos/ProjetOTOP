@@ -1,13 +1,16 @@
 <?php 
-  //apelle du fichier commandes.php
+  // Inclusion du fichier commandes.php qui contient probablement des fonctions ou des classes nécessaires
   require("config/commandes.php");
 
-  //creation variable qui recois les produit grace a la function afficher
+  // Appel de la fonction afficher() pour obtenir la liste des produits
   $Produits=afficher();
 
+  // Vérification de l'existence d'une session
   if (isset($_SESSION)) {
+  // Affichage d'un message si une session est active
     echo "Une session est active.";
-  } else {
+  } else 
+    // Affichage d'un message si aucune session n'est active
     echo "Aucune session n'est active.";
   }
  
