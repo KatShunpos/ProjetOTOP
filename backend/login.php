@@ -89,11 +89,7 @@ if(isset($_POST['valider'] )){
 
           header('location:indexlog.php');
           }
-              // Redirection vers la page utilisateur
-              
+              // Redirection vers la page utilisateur  
           }
       }
-   
-      
-  
 ?>
