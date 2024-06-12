@@ -10,10 +10,11 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/2 - CSS/styleboutique.css" />
     <link rel="stylesheet" href="/2 - CSS/styleaccueil.css" />
+    <link rel="stylesheet" href="/2 - CSS/styleboutique.css" />
 
-    <script link rel="stylesheet" href="/3 - JS/script.js" defer></script>
+    <script src="/3 - JS/script.js" defer"></script>
+    <script src="/3 - JS/categorie.js" defer"></script>
     <script
       src="https://kit.fontawesome.com/259f41835c.js"
       crossorigin="anonymous"
@@ -257,8 +258,38 @@
         </nav>
       </div>
     </section>
+    <form action="" method="get" class="form" id="btn">
+      <div class="form">
+        <label for="tshirt">T-Shirt</label>
+        <input type="button" name="tshirt" id="tshirt" value="T-Shirt" />
+      </div>
+      <div class="form">
+        <label for="polo">Polo</label>
+        <input type="button" name="polo" id="polo" value="Polo" />
+      </div>
+      <div class="form">
+        <label for="veste">Veste</label>
+        <input type="button" name="veste" id="veste" value="Veste" />
+      </div>
+      <div class="form">
+        <label for="short">Short</label>
+        <input type="button" name="short" id="short" value="Short" />
+      </div>
+      <div class="form">
+        <label for="casquette">Casquette</label>
+        <input
+          type="button"
+          name="casquette"
+          id="casquette"
+          value="Casquette"
+        />
+      </div>
+    </form>
+    <div id="content" class="container mt-4">
+      <!-- Le contenu dynamique sera chargé ici -->
+    </div>
     <!-- Galerie -->
-    <div class="container col-6" id="galerie">
+    <div class="container" id="galerie">
       <!-- Top Group -->
       <div class="top-group">
         <div class="card" style="width: 18rem" id="e150">
@@ -294,7 +325,6 @@
               <button
                 type="submit"
                 class="btn btn-success"
-                href="/1 - HTML/1C - HTML Fiche Produits/casquette B640.html"
               >
                 Fiche du produit
               </button>
@@ -314,7 +344,6 @@
               <button
                 type="submit"
                 class="btn btn-success"
-                data-url="http://127.0.0.1:5500/1%20-%20HTML/product.html"
               >
                 Fiche du produit
               </button>
@@ -337,7 +366,6 @@
               <button
                 type="submit"
                 class="btn btn-success"
-                data-url="http://127.0.0.1:5500/1%20-%20HTML/product.html"
               >
                 Fiche du produit
               </button>
@@ -357,7 +385,6 @@
               <button
                 type="submit"
                 class="btn btn-success"
-                data-url="http://127.0.0.1:5500/1%20-%20HTML/product.html"
               >
                 Fiche du produit
               </button>
@@ -377,7 +404,6 @@
               <button
                 type="submit"
                 class="btn btn-success"
-                data-url="http://127.0.0.1:5500/1%20-%20HTML/product.html"
               >
                 Fiche du produit
               </button>
