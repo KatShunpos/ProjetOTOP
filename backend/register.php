@@ -42,22 +42,25 @@ require "config/connexion.php";
 </html>
 <?php 
 
-session_start();
+session_start(); // Démarre une nouvelle session ou reprend une session existante
 
-require "config/commandes.php";
+require "config/commandes.php"; // Inclut le fichier qui contient les fonctions pour interagir avec la base de données
+
 //verification de saisie du formulaire
 if(isset($_POST['valider'])){
-  //verif remplisage
+    // Vérifie si les champs du formulaire ne sont pas vides
     if(!empty($_POST['nom']) AND!empty($_POST['motdepasse'] AND!empty($_POST['email']))){
-      //creation des variable avec sha1 pour hacher les mdp en bdd
+        // Récupère les valeurs des champs du formulaire et les sécurise
         $pseudo = htmlspecialchars($_POST['nom']);      
         $email = htmlspecialchars($_POST['email']);
-        $mdp = ($_POST['motdepasse']);
+        $mdp = ($_POST['motdepasse']); 
+        // Le mot de passe n'est pas sécurisé ici, il serait préférable d'utiliser une fonction de hachage sécurisée comme password_hash()
 
         register($pseudo, $email, $mdp);
         }
     }else{
-      echo "ERROR : veuillez remplir tous les champs";
+        // Affiche un message d'erreur si un champ du formulaire est vide
+        echo "ERROR : veuillez remplir tous les champs";
     }
 
 ?>
