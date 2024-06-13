@@ -11,7 +11,7 @@
 }
 #navbarotop #navitem {
     display: flex;
-    margin-inline: 8%;
+    margin-inline: 5%;
 }
 #navbarnav {
     display: flex;
@@ -22,7 +22,7 @@
 }
 
 #searchbar input {
-    width: 25em
+    width: 23em
 }
 #loupe {
     color: #FFF5F7;
@@ -51,7 +51,7 @@
     margin-top: 4%;
 }
 #recherche {
-    margin-left: 13%;
+    margin-left: 10%;
 }
 
 /* CSS megamenu */
@@ -79,6 +79,7 @@
 #cardshadow1 {
     margin-left: 4%;
 }
+
 #cardshadow1 div { /* Carte du megamenu */ 
     background-color: #FF1E6E; 
     height: 7em; 
@@ -159,10 +160,7 @@
     text-align: center;
     margin-top: 3%;
 }
-#descriptif h6 {
-    color: grey;
-    margin-top: 6%;
-}
+
 #cardshadow7 { /* Carte du megamenu */ 
     display: flex; 
     justify-content: center;
@@ -172,7 +170,7 @@
     width: 100;
 }
 #cardshadow7 h4 { /* Carte du megamenu */ 
-    color: rosybrown;
+    color: grey;
 }
 #cardshadow7 .card-body { /* Carte du megamenu */ 
     margin-top: -15%;
@@ -306,10 +304,12 @@
     display: flex;
     justify-content: end;
     margin-left: 30%;
-    margin-top: -30%;
+    margin-top: -90%;
     margin-bottom: 40%;
-    
-
+    width: 50%;
+}
+#changeableImage {
+    cursor: pointer;
 }
 /* CSS PARTENAIRES */
 
@@ -317,7 +317,7 @@
     display: flex;
     justify-content: center;
     color: gray;
-    margin-top: 5%;
+    margin-top: -10%;
 }
 #titrepartenaire h2 {
     font-size: 300%;
@@ -381,9 +381,6 @@
 #footer2 {
     margin-left: 5%;
 }
-#logootop {
-    width: 60%;
-}
 #footer2 ul li, p {
     color: grey;
     list-style-type: none;
@@ -399,6 +396,7 @@
 #logootop {
     margin-top: 20%;
     margin-bottom: 5%;
+    width: 60%;
 }
 #liste {
     margin-left: -12%;
